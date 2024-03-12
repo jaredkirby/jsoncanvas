@@ -1,0 +1,90 @@
+{
+  "nodes": [
+    {
+      "id": "welcomeText",
+      "type": "text",
+      "x": 100,
+      "y": 50,
+      "width": 300,
+      "height": 100,
+      "text": "Welcome to our project canvas!",
+      "color": "#4A90E2"
+    },
+    {
+      "id": "projectDiagram",
+      "type": "file",
+      "x": 450,
+      "y": 50,
+      "width": 320,
+      "height": 240,
+      "file": "diagrams/architecture.png"
+    },
+    {
+      "id": "githubRepo",
+      "type": "link",
+      "x": 100,
+      "y": 200,
+      "width": 300,
+      "height": 50,
+      "url": "https://github.com/yourProject/repo"
+    },
+    {
+      "id": "documentationGroup",
+      "type": "group",
+      "x": 800,
+      "y": 50,
+      "width": 400,
+      "height": 300,
+      "label": "Documentation",
+      "background": "images/docs_background.jpg",
+      "backgroundStyle": "cover"
+    },
+    {
+      "id": "apiDocs",
+      "type": "link",
+      "x": 850,
+      "y": 100,
+      "width": 300,
+      "height": 50,
+      "url": "https://yourProject.com/docs/api"
+    },
+    {
+      "id": "userGuide",
+      "type": "link",
+      "x": 850,
+      "y": 170,
+      "width": 300,
+      "height": 50,
+      "url": "https://yourProject.com/docs/user-guide"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "fromNode": "welcomeText",
+      "toNode": "projectDiagram",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "#4A90E2",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge2",
+      "fromNode": "projectDiagram",
+      "toNode": "documentationGroup",
+      "fromSide": "right",
+      "toSide": "left",
+      "color": "#7ED321",
+      "toEnd": "arrow"
+    },
+    {
+      "id": "edge3",
+      "fromNode": "welcomeText",
+      "toNode": "githubRepo",
+      "fromSide": "bottom",
+      "toSide": "top",
+      "color": "#D0021B",
+      "toEnd": "arrow"
+    }
+  ]
+}
